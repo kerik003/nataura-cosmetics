@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: #F6FBFB;
+  color: #0A3B42;
+}
+
+.container-x {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-primary px-6 py-3
+    text-sm font-semibold text-white transition hover:bg-primary-dark
+    disabled:cursor-not-allowed disabled:bg-line disabled:text-ink/40;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-full border border-primary/30
+    bg-white px-6 py-3 text-sm font-semibold text-primary transition hover:bg-primary/5;
+}
+
+.card {
+  @apply rounded-xl2 border border-line bg-white shadow-sm;
+}
